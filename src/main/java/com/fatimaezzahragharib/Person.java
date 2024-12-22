@@ -34,10 +34,15 @@ public class Person {
         return Objects.hash(id);
     }
 
-    // Méthode toString pour afficher les informations de la personne sous forme de
-    // chaîne
+    // Méthode toString pour afficher les informations de la personne sous forme de chaîne
     @Override
     public String toString() {
         return "Person{id=" + id + ", name='" + name + "'}";
+    }
+
+    // Exemple d'utilisation dans la méthode main (à déplacer dans une classe de test)
+    public static void main(String[] args) {
+        Person person = new Person(1, "John");
+        System.out.println(person.toString());
     }
 }

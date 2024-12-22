@@ -39,10 +39,4 @@ public class Person {
     public String toString() {
         return "Person{id=" + id + ", name='" + name + "'}";
     }
-
-    // Exemple d'utilisation dans la méthode main (à déplacer dans une classe de test)
-    public static void main(String[] args) {
-        Person person = new Person(1, "John");
-        System.out.println(person.toString());
-    }
 }
